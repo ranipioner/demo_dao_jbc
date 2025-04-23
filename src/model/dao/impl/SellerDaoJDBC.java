@@ -73,7 +73,7 @@ PreparedStatement st = null;
 		try {
 			st = conn.prepareStatement(
 					"UPDATE seller "
-					+ " SET Name=?, Email=?, BirthDate=?, BaseSalary=?, DepartmentID=? "
+					+ "SET Name=?, Email=?, BirthDate=?, BaseSalary=?, DepartmentID=? "
 					+ "WHERE Id = ? ");
 			
 			st.setString(1, obj.getName());
